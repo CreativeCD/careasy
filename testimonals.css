@@ -1,0 +1,76 @@
+.testimonials-section {
+    text-align: center;
+    padding: 80px 5%;
+    background: #f1faf7;
+}
+
+.testimonials-section h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.testimonials-section .subtitle {
+    max-width: 640px;
+    margin: 0 auto 50px;
+    color: #555;
+    font-size: 16px;
+}
+
+.testimonials-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    background: #fff;
+    padding: 30px;
+    width: 320px;
+    border-radius: 14px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    transition: all 0.28s ease;
+    cursor: default;
+}
+
+/* ⭐ Hover effect: lift + stronger shadow */
+.testimonial-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 26px rgba(0,0,0,0.12);
+}
+
+.stars {
+    color: #f4c200;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.quote {
+    font-style: italic;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.testimonial-card h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.patient-info {
+    margin-top: 4px;
+    color: #777;
+    font-size: 14px;
+}
+.hero {
+    position: relative;
+    z-index: 1;
+}
+
+.testimonials-section {
+    position: relative;
+    z-index: 2;
+}
