@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="login.css">
 </head>
+
 <body>
 
 <div class="container">
@@ -18,15 +18,15 @@
 
         <div class="gmail-box">
             <p>Use your Google credentials to log in</p>
-            <button class="gmail-btn">
+
+            <!-- GOOGLE LOGIN BUTTON -->
+            <a href="https://accounts.google.com/" class="gmail-btn" target="_blank">
                 <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg">
                 Log in with Gmail
-            </button>
+            </a>
         </div>
 
-        <div class="divider">
-            <span>Or</span>
-        </div>
+        <div class="divider"><span>Or</span></div>
 
         <label>Email</label>
         <input type="email" class="input-box">
@@ -34,40 +34,11 @@
         <label>Password</label>
         <input type="password" class="input-box">
 
-        <a class="forgot">Forgot password</a>
+        <a class="forgot" href="#">Forgot password</a>
 
         <button class="login-btn">Log In</button>
 
-        <p class="signup-text">Not a member? <a href="#">Sign up</a></p>
-
-    </div>
-
-    <div class="right-box">
-        <h2>A modern approach to <br> primary care</h2>
-
-        <div class="feature">
-            <img src="https://cdn-icons-png.flaticon.com/512/2966/2966327.png">
-            <div>
-                <h3>Primary care for all ages</h3>
-                <p>Get care for any physical or mental health concern – from colds to chronic conditions.</p>
-            </div>
-        </div>
-
-        <div class="feature">
-            <img src="https://cdn-icons-png.flaticon.com/512/1046/1046873.png">
-            <div>
-                <h3>24/7 virtual care</h3>
-                <p>Video chat with a provider or message our providers at no cost to you.</p>
-            </div>
-        </div>
-
-        <div class="feature">
-            <img src="https://cdn-icons-png.flaticon.com/512/2965/2965567.png">
-            <div>
-                <h3>Rx renewals</h3>
-                <p>Easily request prescription renewals and get them filled wherever you go.</p>
-            </div>
-        </div>
+        <p class="signup-text">Not a member? <a class="sign"href="#">Sign up</a></p>
 
     </div>
 
