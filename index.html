@@ -3,55 +3,386 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careasy</title>
 
-    <!-- GOOGLE FONT -->
+    <!-- POPPINS FONT -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
-    <title>Healthcare Landing Page</title>
-</head>
 
+    <link rel="stylesheet" href="testimonals.css">
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- WHY US STYLE -->
+    <link rel="stylesheet" href="why_us.css">
+
+
+    <link rel="stylesheet" href="contact.css">
+
+
+
+
+    <style>
+        body{
+            display:flex;
+            flex-direction:column;
+            min-height:100vh;
+            margin:0;
+            font-family:'Poppins', sans-serif;
+        }
+
+        footer{
+            z-index: 4;
+            background:linear-gradient(180deg,#0a1224,#08101e);
+            color:#bfc7d5;
+            padding:60px 80px 30px;
+            margin-top:auto;
+        }
+
+        .footer-container{
+            display:flex;
+            justify-content:space-between;
+            flex-wrap:wrap;
+        }
+
+        .footer-col h2{
+            color:white;
+        }
+
+        .footer-col h2 span{
+            color:#00ffb3;
+        }
+
+        .footer-col h3{
+            color:white;
+            margin-bottom:15px;
+        }
+
+        .footer-col a{
+            display:block;
+            color:#bfc7d5;
+            text-decoration:none;
+            margin:6px 0;
+            transition:0.3s;
+        }
+
+        .footer-col a:hover{
+            color:#00ffb3;
+        }
+
+        .social a{
+            margin-right:10px;
+            color:#bfc7d5;
+            font-size:18px;
+            transition:0.3s;
+            text-decoration:none;
+        }
+
+        .social a:hover{
+            color:#00ffb3;
+        }
+
+        .footer-bottom{
+            text-align:center;
+            margin-top:40px;
+            border-top:1px solid #1c2640;
+            padding-top:20px;
+            font-size:14px;
+        }
+    </style>
+</head>
 <body>
 
     <!-- NAVBAR -->
-    <header class="navbar">
-        <div class="logo">careasy<span>+</span></div>
+<header class="navbar">
+    <div class="logo">careasy<span>+</span></div>
 
-        <nav class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Services</a>
-            <a href="#">Why Us</a>
-            <a href="#">Contact</a>
-        </nav>
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#whyus">Why Us</a>
+        <a href="contacts.html">Contact</a>
+    </nav>
 
-        <button class="nav-btn">Book Appointment</button>
-    </header>
+    <a href="book.html" class="nav-btn">Book Appointment</a>
+</header>
 
     <!-- HERO SECTION -->
-    <section class="hero">
-        <div class="hero-content">
+<section id="home" class="hero">
+    <div class="hero-left">
+        <p class="tag">welcome to modern healthcare</p>
 
-            <p class="tag">welcome to modern Healthcare</p>
+        <h1>Your Health, Our <span>Priority</span></h1>
 
-            <h1>Your Health, Our <span>Priority</span></h1>
-            <p class="subtitle">
-                Delivering exceptional medical care with compassion and expertise.
-                Trust us with your health journey.
-            </p>
+        <p class="subtitle">
+            Delivering exceptional medical care with compassion and expertise.
+            Trust us with your health journey.
+        </p>
 
-            <div class="hero-buttons">
-                <button class="primary-btn">Book Appointment →</button>
-                <button class="secondary-btn">Learn More</button>
+        <div class="hero-buttons">
+            <button class="primary-btn">Book Appointment →</button>
+            <button class="secondary-btn">Learn More</button>
+        </div>
+
+        <div class="stats">
+            <div><h3>500+</h3><p>Expert Doctors</p></div>
+            <div><h3>10K+</h3><p>Happy patients</p></div>
+            <div><h3>20+</h3><p>yrs of experience</p></div>
+        </div>
+    </div>
+
+    <!-- NEW IMAGE + BOX -->
+    <div class="hero-image-box">
+        <img src="https://t3.ftcdn.net/jpg/02/30/45/46/360_F_230454605_dHsGhysdNFDeuItNFUj4b7wwAIwE4hDX.jpg" class="hero-image">
+
+        <div class="availability-box">
+            <div class="dot"></div>
+            <div>
+                <h4>Available 24/7</h4>
+                <p>Connect with a provider anytime</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="services-section">
+
+        <div class="services-tag">Our Services</div>
+
+        <h2 class="services-title">Comprehensive Healthcare Solutions</h2>
+
+        <p class="services-desc">
+            From preventive care to specialized treatment, we offer a full spectrum of<br>
+            healthcare services.
+        </p>
+
+        <div class="service-grid">
+
+            <div class="service-card active">
+                <div class="icon">💙</div>
+                <h3>Cardiology</h3>
+                <p>Expert cardiac care and heart disease prevention with advanced diagnostic tools.</p>
             </div>
 
-            <div class="stats">
-                <div><h3>500+</h3><p>Expert Doctors</p></div>
-                <div><h3>10K+</h3><p>Happy patients</p></div>
-                <div><h3>20+</h3><p>yrs of experience</p></div>
+            <div class="service-card">
+                <div class="icon">🧠</div>
+                <h3>Neurology</h3>
+                <p>Specialized treatment for neurological conditions and brain health.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="icon">📈</div>
+                <h3>Physical Therapy</h3>
+                <p>Personalized rehabilitation and fitness programs for recovery and wellness.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="icon">🛡️</div>
+                <h3>Preventive Care</h3>
+                <p>Comprehensive health screenings and wellness programs for long-term health.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CAREASY ZOOM PAGE -->
+    <section class="intro">
+        <h1 class="zoomText">CAREASY <span>+</span></h1>
+    </section>
+
+    <!-- SERVICES GRID PAGE -->
+    <section class="services" id="services2">
+        <h1>Our Services</h1>
+
+        <div class="services-grid">
+            <div class="box">Cardiology</div>
+            <div class="box">Neurology</div>
+            <div class="box">Dental Care</div>
+            <div class="box">Psychiatry</div>
+            <div class="box">Dermatology</div>
+            <div class="box">Pediatrics</div>
+        </div>
+    </section>
+
+    <!-- WHY US -->
+    <section id="whyus" class="whyus-section">
+        <div class="left-text">
+            <h1>Why Us<span>?</span></h1>
+
+            <p>
+                We combine quality, creativity, and reliability to deliver results that truly matter.
+                <br><br>
+                Our team focuses on understanding your needs and turning ideas into real impact.
+                <br><br>
+                We work fast, stay transparent, and keep you updated at every step.
+                <br><br>
+                With us, you get modern solutions, smooth experience, and long-term support.
+                <br><br>
+                Your success is our priority — and we’re committed to making it happen.
+            </p>
+        </div>
+
+        <div class="right-box">
+             <img src="https://b3378418.smushcdn.com/3378418/wp-content/uploads/2023/10/nurse-group.jpg?lossy=2&strip=1&webp=1">
+            </div>
+    </section>
+<section>
+
+<div class="header">
+    <h1>Contact </h1>
+    <p>Questions, bug reports, feedback - we're here for all of it.</p>
+</div>
+
+<div class="contact-container">
+    
+    <div class="contact-box">
+        <h3>Select a topic:</h3>
+
+        <div class="topic-buttons">
+            <button>doctors</button>
+            <button>Billing and subscriptions</button>
+            <button>medicines</button>
+            <button>appoinments/bookings</button>
+            <button>medical acc</button>
+            <button>Notifications</button>
+            <button>Signing in</button>
+            <button>others</button>
+        </div>
+
+        <h3 style="margin-top:35px;">Or tell us what you need help with:</h3>
+        <input type="text" placeholder="Enter a topic, such as 'notifications'">
+
+        <button class="help-btn">Get Help</button>
+    </div>
+
+    <!-- RIGHT SIDE PROFILE CARDS -->
+    <div class="profile-area">
+        <div class="profile-card p1"></div>
+        <div class="profile-card p2"></div>
+        <div class="profile-card p3"></div>
+        <div class="profile-card p4"></div>
+    </div>
+
+</div>
+
+</section>
+<section class="testimonials-section">
+    <h2>What our patients say</h2>
+    <p class="subtitle">
+        Don't just take our word for it. Hear from some of the thousands of patients who trust us with their healthcare.
+    </p>
+
+    <div class="testimonials-container">
+
+        <!-- Card 1 -->
+        <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="quote">
+                "The virtual care option has been a game-changer for me. I can see my doctor from home, and the quality of care is exceptional."
+            </p>
+            <h4>Sarah Johnson</h4>
+            <p class="patient-info">Patient since 2022</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="quote">
+                "I love how easy it is to book appointments and communicate with my care team. They're always available when I need them."
+            </p>
+            <h4>Michael Chen</h4>
+            <p class="patient-info">Patient since 2021</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="quote">
+                "The providers really take the time to listen and understand my health concerns. I finally feel like I have a healthcare partner."
+            </p>
+            <h4>Emily Rodriguez</h4>
+            <p class="patient-info">Patient since 2023</p>
+        </div>
+
+    </div>
+</section>
+
+
+    <header class="navbar">
+        <div class="logo">careasy<span>+</span></div>
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#whyus">Why Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <<a href="book.html" class="nav-btn">Book Appointment</a>
+
+    </header>
+
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-col">
+            <h2>careasy<span>+</span></h2>
+            <p>Modern healthcare designed for you.</p>
+            <div class="social">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
             </div>
         </div>
 
-        <div class="hero-bg"></div>
+        <div class="footer-col">
+            <h3>Services</h3>
+            <a href="#">Virtual care</a>
+            <a href="#">Primary care</a>
+            <a href="#">Urgent care</a>
+            <a href="#">Mental health</a>
+            <a href="#">Chronic care</a>
+            <a href="#">Preventive care</a>
+        </div>
+
+        <div class="footer-col">
+            <h3>Company</h3>
+            <a href="#">About us</a>
+            <a href="#">Careers</a>
+            <a href="#">Press</a>
+            <a href="#">Blog</a>
+            <a href="#">Partners</a>
+        </div>
+
+        <div class="footer-col">
+            <h3>Resources</h3>
+            <a href="#">Help Center</a>
+            <a href="#">Patient Portal</a>
+            <a href="#">Insurance</a>
+            <a href="#">Pricing</a>
+            <a href="#">FAQs</a>
+        </div>
+
+        <div class="footer-col">
+            <h3>Legal</h3>
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms of service</a>
+            <a href="#">HIPAA notice</a>
+            <a href="#">Accessibility</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © 2025 careasy+. All rights reserved.
+    </div>
+</footer>
+
+
+</body>
+</html>
+
     </section>
 </body>
 </html>
