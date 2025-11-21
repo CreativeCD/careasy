@@ -1,4 +1,60 @@
 /* GLOBAL */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 5%;
+}
+
+.hero-left {
+    max-width: 50%;
+}
+
+.hero-image-box {
+    position: relative;
+    width: 48%;
+}
+
+.hero-image {
+    width: 100%;
+    border-radius: 18px;
+    object-fit: cover;
+    box-shadow: 0px 8px 22px rgba(0,0,0,0.15);
+}
+
+/* 24/7 Box */
+.availability-box {
+    position: absolute;
+    bottom: -25px;
+    left: 20px;
+    background: #ffffff;
+    padding: 16px 20px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0px 4px 18px rgba(0,0,0,0.1);
+}
+
+.availability-box .dot {
+    width: 14px;
+    height: 14px;
+    background: #22c55e;
+    border-radius: 50%;
+}
+
+.availability-box h4 {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.availability-box p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -293,6 +349,8 @@ html {
 /* HOVER POP + GLOW */
 .box:hover {
     transform: scale(1.07);
-    background: #dfffe8;
+    background: #b6f5c8;
     box-shadow: 0px 10px 25px rgba(0, 255, 150, 0.25);
 }
+
+
