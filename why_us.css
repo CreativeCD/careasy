@@ -1,101 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
 
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: 'Poppins', sans-serif;
-        background: #ffffff;
-        height: 200vh; /* allows scrolling */
-    }
+/* Main sticky container */
+.whyus-section {
+    background-color: #a3dbb7;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 80px;
+    box-sizing: border-box;
+    gap: 15px;
 
-    /* Main sticky container */
-    .whyus-section {
-        position: sticky;
-        top: 0;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 40px 80px;
-        box-sizing: border-box;
-        gap: 15px;
-    }
+    /* For smooth hide transition */
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
 
-    .left-text {
-        width: 50%;
-        padding-right: 15px;
-    }
+/* LEFT TEXT */
+.left-text {
+    width: 50%;
+    padding-right: 15px;
+}
+
+.left-text h1 {
+    font-size: 60px;
+    margin: 0;
+    font-weight: 600;
+    opacity: 0;
+    transform: translateY(40px);
+    color: rgb(0, 0, 0);
+}
+
+.left-text p {
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+/* RIGHT BOX (IMAGE PLACEHOLDER) */
+.right-box {
+    width: 40%;
+    height: 350px;
+    background: #dcdcdc;
+    border-radius: 20px;
+    opacity: 0;
+    transform: translateX(150px);
+}
+
+/* -------- Scroll Animations -------- */
+@supports (animation-timeline: scroll()) {
 
     .left-text h1 {
-        font-size: 60px;
-        margin: 0;
-        font-weight: 600;
-        opacity: 0;
-        transform: translateY(40px);
+        animation: fadeUp 3s linear both;
+        animation-timeline: scroll();
+        animation-range: 5% 100%;
     }
 
     .left-text p {
-        margin-top: 20px;
-        font-size: 18px;
-        line-height: 1.6;
-        opacity: 0;
-        transform: translateY(40px);
+        animation: fadeUp 3s linear both;
+        animation-timeline: scroll();
+        animation-range: 5% 100%;
     }
 
     .right-box {
-        width: 40%;
-        height: 350px;
-        background: #dcdcdc;
-        border-radius: 20px;
+        animation: slideLeftFade 3s linear both;
+        animation-timeline: scroll();
+        animation-range: 5% 100%;
+    }
+}
+
+span {
+    font-weight: bold;
+    color: #457a25cc;
+}
+
+/* KEYFRAMES */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideLeftFade {
+    from {
         opacity: 0;
         transform: translateX(150px);
     }
-
-    /* -------- Scroll Animations -------- */
-    @supports (animation-timeline: scroll()) {
-
-        .left-text h1 {
-            animation: fadeUp 1s linear both;
-            animation-timeline: scroll();
-            animation-range: 0% 40%;
-        }
-
-        .left-text p {
-            animation: fadeUp 1s linear both;
-            animation-timeline: scroll();
-            animation-range: 10% 55%;
-        }
-
-        .right-box {
-            animation: slideLeftFade 1s linear both;
-            animation-timeline: scroll();
-            animation-range: 20% 90%;
-        }
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
-    span{
-        font-weight: bold;
-        color: #6BBF8A;
-    }
-    /* KEYFRAMES */
-    @keyframes fadeUp {
-        from {
-            opacity: 0;
-            transform: translateY(40px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
+}
 
-    @keyframes slideLeftFade {
-        from {
-            opacity: 0;
-            transform: translateX(150px);
-        }
-        to {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
+/* ------------------ HIDE WHY-US ON CONTACTS PAGE ------------------ */
+body.contacts-page .whyus-section {
+    opacity: 0;
+    visibility: hidden;
+}
+section {
+    position: relative;
+    z-index: 1;
+}
