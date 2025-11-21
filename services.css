@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    padding: 18px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    font-size: 26px;
+    color: #04c7b4;
+}
+
+.nav-left h2 {
+    font-size: 22px;
+    color: #04c7b4;
+}
+
+nav a {
+    margin: 0 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #04c7b4;
+}
+
+.book-btn {
+    padding: 10px 22px;
+    background: #04c7b4;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.book-btn:hover {
+    transform: scale(1.05);
+}
+
+/* MAIN SECTION */
+.services-section {
+    text-align: center;
+    padding: 100px 80px;
+}
+
+/* Green Tag */
+.tag {
+    display: inline-block;
+    background: #c8fdf1;
+    color: #04bea7;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* Heading */
+.main-heading {
+    font-size: 42px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+/* Description */
+.description {
+    font-size: 16px;
+    color: #6b6f78;
+    margin-bottom: 50px;
+    line-height: 1.6;
+}
+
+/* GRID */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+/* SERVICE CARD */
+.service-card {
+    padding: 35px 25px;
+    border-radius: 20px;
+    border: 2px solid #e9f0f3;
+    background: #ffffff;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+/* Icon */
+.icon {
+    background: #d4fff8;
+    padding: 15px;
+    border-radius: 12px;
+    display: inline-block;
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #00a895;
+}
+
+/* Card Title */
+.service-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+/* Card Text */
+.service-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* HOVER EFFECT (POP + LIGHT GREEN BG) */
+.service-card:hover {
+    transform: translateY(-7px);
+    background: #e7fff7;
+    border-color: #9df5df;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* ACTIVE (like the first card in screenshot) */
+.service-card.active {
+    background: #e7fff7;
+    border-color: #63e6c9;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+    transform: translateY(-5px);
+}
+
